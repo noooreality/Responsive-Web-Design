@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Job Anfrage Formular</h1>
+  <h2>Full Stack Developer</h2>
+  <p id="description">Bitte füllen Sie das Formular aus, wir werden Sie kontaktieren.</p>
+
+  <form id="survey-form">
+    <label for="name">Name (required):</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Ex. John Doe"
+      required
+      aria-required="true"
+      size="20"
+    /><br>
+
+    <label for="email">Email-Adresse (required):</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="example@email.com"
+      required
+      aria-required="true"
+      size="20"
+    /><br>
+
+    <label for="number">Alter (18–60):</label>
+    <input
+      type="number"
+      id="number"
+      name="age"
+      placeholder="18"
+      min="18"
+      max="60"
+      required
+      aria-required="true"
+    /><br>
+
+    <label for="dropdown">Anstellungsart:</label>
+    <select name="dropdown" id="dropdown">
+      <option selected value="vollzeit">Vollzeit</option>
+      <option value="teilzeit">Teilzeit</option>
+      <option value="minijob">Minijob</option>
+    </select><br><br>
+
+    <fieldset>
+      <legend>Haben Sie bereits Erfahrung?</legend>
+      <label for="yes-option">Ja</label>
+      <input id="yes-option" type="radio" value="Ja" name="erfahrung" />
+      <label for="no-option">Nein</label>
+      <input id="no-option" type="radio" value="Nein" name="erfahrung" />
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Worauf sind Sie spezialisiert?</legend>
+      <label for="java">Java</label>
+      <input type="checkbox" id="java" name="skills" value="java" /><br>
+
+      <label for="python">Python</label>
+      <input type="checkbox" id="python" name="skills" value="python" /><br>
+
+      <label for="php">PHP</label>
+      <input type="checkbox" id="php" name="skills" value="php" /><br>
+
+      <label for="csharp">C#</label>
+      <input type="checkbox" id="csharp" name="skills" value="csharp" /><br>
+
+      <label for="all">Alles genannte/Mehr</label>
+      <input checked type="checkbox" id="all" name="skills" value="all" />
+    </fieldset><br>
+
+    <label for="comments">Vermerken Sie, was Sie wichtig finden:</label><br>
+    <textarea
+      maxlength="150"
+      cols="30"
+      rows="5"
+      placeholder="Max. 150 Zeichen"
+      name="comments"
+      id="comments"
+    ></textarea><br><br>
+
+    <button id="submit" type="submit">Absenden</button>
+  </form>
+</body>
+</html>
