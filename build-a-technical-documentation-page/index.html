@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technische Dokumentation – JavaScript</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Dokumentation</header>
+    <a class="nav-link" href="#Einführung">Einführung</a>
+    <a class="nav-link" href="#Variablen_und_Typen">Variablen und Typen</a>
+    <a class="nav-link" href="#Funktionen">Funktionen</a>
+    <a class="nav-link" href="#Kontrollstrukturen">Kontrollstrukturen</a>
+    <a class="nav-link" href="#DOM_und_Events">DOM und Events</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Einführung">
+      <header>Einführung</header>
+      <p>JavaScript ist eine weit verbreitete Programmiersprache für das Web.</p>
+      <p>Sie wird hauptsächlich im Frontend eingesetzt.</p>
+      <code>console.log("Hallo Welt");</code>
+      <p>JavaScript kann direkt im Browser ausgeführt werden.</p>
+      <p>Es wurde 1995 entwickelt und ständig weiterentwickelt.</p>
+      <p>JS ist eine interpretierte Sprache.</p>
+      <p>Sie wird oft zusammen mit HTML und CSS verwendet.</p>
+      <p>Sie ist sehr flexibel und dynamisch.</p>
+      <p>Mit JavaScript lassen sich interaktive Webseiten erstellen.</p>
+      <ul>
+        <li>Interaktivität</li>
+        <li>Browserkompatibilität</li>
+        <li>Große Community</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variablen_und_Typen">
+      <header>Variablen und Typen</header>
+      <p>Es gibt drei Hauptarten: var, let und const.</p>
+      <p>let und const sind ab ES6 empfohlen.</p>
+      <code>let zahl = 5;</code>
+      <code>const name = "Max";</code>
+      <p>JavaScript ist dynamisch typisiert.</p>
+      <p>Datentypen umfassen Number, String, Boolean, Object, etc.</p>
+      <p>Typeof kann zur Typüberprüfung verwendet werden.</p>
+      <p>Null und undefined sind unterschiedliche Werte.</p>
+      <p>Primitive Typen sind unveränderlich.</p>
+      <ul>
+        <li>Number</li>
+        <li>String</li>
+        <li>Boolean</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Funktionen">
+      <header>Funktionen</header>
+      <p>Funktionen sind grundlegende Bestandteile in JS.</p>
+      <p>Sie werden mit dem Schlüsselwort function deklariert.</p>
+      <code>function hallo() { console.log("Hallo!"); }</code>
+      <p>Arrow Functions wurden mit ES6 eingeführt.</p>
+      <code>const add = (a, b) => a + b;</code>
+      <p>Funktionen können Parameter und Rückgabewerte haben.</p>
+      <p>Funktionen sind Objekte.</p>
+      <p>Sie können auch anonym sein.</p>
+    </section>
+
+    <section class="main-section" id="Kontrollstrukturen">
+      <header>Kontrollstrukturen</header>
+      <p>JS unterstützt if, else, switch, while, do-while und for.</p>
+      <p>Bedingungen basieren auf Boolean-Werten.</p>
+      <code>if (x > 10) { console.log("Größer als 10"); }</code>
+      <p>Auch ternäre Operatoren sind möglich.</p>
+      <p>switch ist nützlich für viele Bedingungen.</p>
+      <p>while-Schleifen wiederholen sich, solange die Bedingung wahr ist.</p>
+      <code>for (let i = 0; i < 5; i++) { console.log(i); }</code>
+    </section>
+
+    <section class="main-section" id="DOM_und_Events">
+      <header>DOM und Events</header>
+      <p>Der DOM stellt die HTML-Struktur als Objekt dar.</p>
+      <p>Mit JS kann man HTML-Elemente manipulieren.</p>
+      <code>document.getElementById("demo").innerText = "Hallo";</code>
+      <p>Event Listener reagieren auf Benutzeraktionen.</p>
+      <code>button.addEventListener("click", funktion);</code>
+      <p>Events umfassen click, submit, keydown usw.</p>
+      <ul>
+        <li>click</li>
+        <li>change</li>
+        <li>input</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
