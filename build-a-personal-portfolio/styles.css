@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e8edf1;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  padding: 1rem 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+#navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#welcome-section {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#welcome-section h1 {
+  font-size: 3.5rem;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+}
+
+#project-section {
+  padding: 100px 20px 60px;
+  background-color: #f1f5f9;
+  text-align: center;
+}
+
+.project-tile {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+}
+
+#project-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  max-width: 1300px;
+}
+
+#project-section li {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(59,130,246,0.15);
+  padding: 1.4rem 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#project-section li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(59,130,246,0.35);
+}
+
+#project-section li:focus-within {
+  outline: 3px solid #3b82f6;
+  outline-offset: 4px;
+}
+
+#project-section .icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  fill: #3b82f6;
+  transition: fill 0.3s ease;
+}
+
+#project-section li:hover .icon {
+  fill: #0ea5e9;
+}
+
+#project-section a {
+  color: #1e40af;
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-decoration: none;
+  flex-grow: 1;
+  transition: color 0.3s ease;
+  user-select: text;
+}
+
+#project-section a:hover,
+#project-section a:focus {
+  color: #2563eb;
+  text-decoration: underline;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #navbar li {
+    margin: 5px 0;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-tile {
+    font-size: 1.7rem;
+  }
+}
